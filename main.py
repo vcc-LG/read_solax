@@ -13,8 +13,8 @@ mongo_password = os.environ["MONGO_PASSWORD"]
 
 def get_mongo_client(mongo_cluster, mongo_username, mongo_password):
     uri = 'mongodb+srv://' + mongo_username + \
-        ':' + mongo_password + '@' + mongo_cluster
-    return pymongo.MongoClient(uri, connect=False)
+        ':' + mongo_password + '@' + mongo_cluster + '?ssl=true&ssl_cert_reqs=CERT_NONE'
+    return pymongo.MongoClient(uri)
 
 
 def get_solax_response(solax_url, solax_token_id, solax_sn):

@@ -3,12 +3,12 @@ import pymongo
 import requests
 import sys
 
-solax_url = os.environ("SOLAX_URL")
-solax_token_id = os.environ("SOLAX_TOKEN_ID")
-solax_sn = os.environ("SOLAX_SN")
-mongo_cluster = os.environ("MONGO_CLUSTER")
-mongo_username = os.environ("MONGO_USERNAME")
-mongo_password = os.environ("MONGO_PASSWORD")
+solax_url = os.environ["SOLAX_URL"]
+solax_token_id = os.environ["SOLAX_TOKEN_ID"]
+solax_sn = os.environ["SOLAX_SN"]
+mongo_cluster = os.environ["MONGO_CLUSTER"]
+mongo_username = os.environ["MONGO_USERNAME"]
+mongo_password = os.environ["MONGO_PASSWORD"]
 
 
 def get_mongo_client(mongo_cluster, mongo_username, mongo_password):

@@ -13,7 +13,7 @@ mongo_password = os.environ["MONGO_PASSWORD"]
 
 def get_mongo_client(mongo_cluster, mongo_username, mongo_password):
     uri = 'mongodb+srv://' + mongo_username + \
-        ':' + mongo_password + '@' + mongo_cluster + '/?ssl=true&ssl_cert_reqs=CERT_NONE'
+        ':' + mongo_password + '@' + mongo_cluster
     return pymongo.MongoClient(uri)
 
 

@@ -1,16 +1,14 @@
 import os
 import pymongo
 import requests
-from dotenv import load_dotenv
 import sys
-load_dotenv()
 
-solax_url = os.getenv("SOLAX_URL")
-solax_token_id = os.getenv("SOLAX_TOKEN_ID")
-solax_sn = os.getenv("SOLAX_SN")
-mongo_cluster = os.getenv("MONGO_CLUSTER")
-mongo_username = os.getenv("MONGO_USERNAME")
-mongo_password = os.getenv("MONGO_PASSWORD")
+solax_url = os.environ("SOLAX_URL")
+solax_token_id = os.environ("SOLAX_TOKEN_ID")
+solax_sn = os.environ("SOLAX_SN")
+mongo_cluster = os.environ("MONGO_CLUSTER")
+mongo_username = os.environ("MONGO_USERNAME")
+mongo_password = os.environ("MONGO_PASSWORD")
 
 
 def get_mongo_client(mongo_cluster, mongo_username, mongo_password):

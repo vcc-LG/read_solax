@@ -29,4 +29,11 @@ jobs:
         run: |
           python main.py
         env:
-          key: ${{ secrets.key }} # if run.py requires passwords..etc, set it as secrets
+          SOLAX_URL: ${{ secrets.SOLAX_URL }} 
+          SOLAX_TOKEN_ID: ${{ secrets.SOLAX_TOKEN_ID }} 
+          SOLAX_SN: ${{ secrets.SOLAX_SN }} 
+          MONGO_CLUSTER: ${{ secrets.MONGO_CLUSTER }} 
+          MONGO_USERNAME: ${{ secrets.MONGO_USERNAME }} 
+          MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }} 
+          
+          

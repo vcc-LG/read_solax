@@ -5,7 +5,7 @@ name: Insert solax data
 # Controls when the workflow will run
 on:
   schedule:
-    - cron: "*/5 * * * *" #runs every 5 mins
+    - cron: "5 * * * *" #runs every 5 mins
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
